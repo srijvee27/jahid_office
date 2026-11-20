@@ -198,12 +198,12 @@ export default function HomePage() {
           
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10">
             <div className="md:col-span-4 flex flex-col items-center text-center">
-              <div className="relative w-40 h-40 sm:w-48 sm:h-48 rounded-2xl overflow-hidden border-4 border-red-500/40 shadow-2xl bg-slate-900 group ring-4 ring-white/10">
+              <div className="relative w-full max-w-[240px] sm:max-w-[260px] aspect-[4/3] rounded-2xl overflow-hidden border-4 border-red-500/40 shadow-2xl bg-slate-900 group ring-4 ring-white/10">
                 <Image
                   src="/frontend/images/md-portrait.jpg"
                   alt="Managing Director - Jahid Office Equipment"
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
                   unoptimized
                 />
               </div>

@@ -40,12 +40,12 @@ export default function MessageFromMDPage() {
           <div className="lg:col-span-4 space-y-6">
             <div className="p-6 bg-white/95 backdrop-blur-md rounded-3xl border border-slate-200/90 shadow-lg text-center space-y-4 card-3d">
               
-              <div className="relative w-48 h-48 mx-auto rounded-2xl overflow-hidden border-4 border-red-500/30 shadow-2xl bg-slate-900">
+              <div className="relative w-full max-w-[280px] aspect-[4/3] mx-auto rounded-2xl overflow-hidden border-4 border-red-500/30 shadow-2xl bg-slate-900 group">
                 <Image
                   src="/frontend/images/md-portrait.jpg"
                   alt="Managing Director - Jahid Office Equipment"
                   fill
-                  className="object-cover"
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
                   unoptimized
                 />
               </div>
