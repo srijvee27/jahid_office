@@ -40,23 +40,23 @@ export default function MessageFromMDPage() {
           <div className="lg:col-span-4 space-y-6">
             <div className="p-6 bg-white/95 backdrop-blur-md rounded-3xl border border-slate-200/90 shadow-lg text-center space-y-4 card-3d">
               
-              <div className="relative w-44 h-44 mx-auto rounded-2xl overflow-hidden border-4 border-red-500/20 shadow-xl bg-slate-50 p-2">
+              <div className="relative w-48 h-48 mx-auto rounded-2xl overflow-hidden border-4 border-red-500/30 shadow-2xl bg-slate-900">
                 <Image
-                  src="/frontend/images/call_support.png"
+                  src="/frontend/images/md-portrait.jpg"
                   alt="Managing Director - Jahid Office Equipment"
                   fill
-                  className="object-contain p-2"
+                  className="object-cover"
                   unoptimized
                 />
               </div>
 
               <div>
-                <h3 className="text-xl font-bold text-slate-900">Md. Jahidul Islam</h3>
+                <h3 className="text-xl font-extrabold text-slate-900">Managing Director</h3>
                 <p className="text-xs font-bold uppercase tracking-wider text-red-600 mt-0.5">
-                  Managing Director
+                  Jahid Office Equipment (JOE)
                 </p>
                 <p className="text-xs text-slate-500 mt-1 font-medium">
-                  Jahid Office Equipment (JOE)
+                  Authorised Importer & Service Provider
                 </p>
               </div>
 
@@ -111,6 +111,23 @@ export default function MessageFromMDPage() {
               </div>
             </div>
 
+            {/* Original Managing Director Photograph Banner */}
+            <div className="relative w-full h-64 sm:h-80 rounded-2xl overflow-hidden border border-slate-200 shadow-md">
+              <Image
+                src="/frontend/images/managingdirector.jpg"
+                alt="Managing Director - Jahid Office Equipment"
+                fill
+                className="object-cover object-top"
+                priority
+                unoptimized
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent flex items-end p-4">
+                <span className="text-xs font-semibold text-white drop-shadow">
+                  Managing Director at Jahid Office Equipment Executive Office
+                </span>
+              </div>
+            </div>
+
             {/* Exact Text from Original Site */}
             <div className="space-y-4 text-sm sm:text-base text-slate-700 leading-relaxed">
               <p>
@@ -139,16 +156,16 @@ export default function MessageFromMDPage() {
               </p>
 
               <p className="italic text-slate-600 pt-2">
-                We would like to express our deepest gratitude to all our banking partners, corporate organizations, government institutions, and university leaders for their steadfast trust in Jahid Office Equipment.
+                We would like to appreciate and acknowledge to our valued customers for their continued support. Our gratitude and appreciation also goes to our international renowned principals who have not only been providing us quality products but also providing us constant support & knowledge sharing to meet the requirement of customers.
               </p>
             </div>
 
             {/* Signature Block */}
             <div className="pt-6 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
-                <p className="font-serif text-lg font-bold text-slate-900 italic">Md. Jahidul Islam</p>
+                <p className="font-serif text-lg font-bold text-slate-900 italic">Managing Director</p>
                 <p className="text-xs text-slate-500 font-semibold uppercase tracking-wider">
-                  Managing Director, Jahid Office Equipment
+                  Jahid Office Equipment (JOE)
                 </p>
               </div>
 

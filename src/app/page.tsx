@@ -193,18 +193,18 @@ export default function HomePage() {
           
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10">
             <div className="md:col-span-4 flex flex-col items-center text-center">
-              <div className="relative w-36 h-36 rounded-2xl overflow-hidden border-2 border-red-500/40 shadow-xl bg-slate-800 p-2">
+              <div className="relative w-40 h-40 rounded-2xl overflow-hidden border-2 border-red-500/50 shadow-2xl bg-slate-900">
                 <Image
-                  src="/frontend/images/call_support.png"
-                  alt="Managing Director"
+                  src="/frontend/images/md-portrait.jpg"
+                  alt="Managing Director - Jahid Office Equipment"
                   fill
-                  className="object-contain p-2"
+                  className="object-cover"
                   unoptimized
                 />
               </div>
-              <h3 className="text-lg font-bold text-white mt-4">Md. Jahidul Islam</h3>
-              <p className="text-xs text-red-400 font-semibold uppercase tracking-wider">Managing Director</p>
-              <p className="text-[11px] text-slate-400 mt-1">Jahid Office Equipment</p>
+              <h3 className="text-lg font-extrabold text-white mt-4">Managing Director</h3>
+              <p className="text-xs text-red-400 font-semibold uppercase tracking-wider">Jahid Office Equipment (JOE)</p>
+              <p className="text-[11px] text-slate-400 mt-1">Authorised Importer & Service Since 1990</p>
             </div>
 
             <div className="md:col-span-8 space-y-4">
