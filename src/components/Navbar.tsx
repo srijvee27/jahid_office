@@ -179,33 +179,35 @@ export default function Navbar() {
                     </button>
 
                     {/* Dropdown Menu */}
-                    <div className="absolute top-full left-0 w-64 pt-2 hidden group-hover:block transition-all z-50">
-                      <div className="p-2 bg-white rounded-2xl shadow-xl border border-slate-200 space-y-1">
+                    <div className="absolute top-full left-0 w-80 sm:w-[340px] pt-2 hidden group-hover:block transition-all z-50">
+                      <div className="p-2.5 bg-white rounded-2xl shadow-2xl border border-slate-200/90 space-y-1">
                         {link.dropdown.map((subItem) => (
                           <Link
                             key={subItem.name}
                             href={subItem.href}
-                            className={`block p-2.5 rounded-xl transition ${
+                            className={`group/item block p-2.5 rounded-xl transition ${
                               pathname === subItem.href
                                 ? 'bg-red-50 text-red-600 font-bold'
                                 : 'hover:bg-slate-100/80 text-slate-700 hover:text-slate-900'
                             }`}
                           >
-                            <div className="flex items-center justify-between">
-                              <span className="text-xs font-semibold whitespace-nowrap">{subItem.name}</span>
+                            <div className="flex items-center justify-between gap-3">
+                              <span className="text-xs font-semibold whitespace-nowrap text-slate-800 group-hover/item:text-red-600 transition">
+                                {subItem.name}
+                              </span>
                               {'badge' in subItem && (
-                                <span className="text-[10px] bg-red-100 text-red-600 px-1.5 py-0.5 rounded font-bold whitespace-nowrap">
+                                <span className="text-[10px] bg-red-100 text-red-600 px-2 py-0.5 rounded-md font-bold whitespace-nowrap shrink-0">
                                   {subItem.badge}
                                 </span>
                               )}
                               {'count' in subItem && (
-                                <span className="text-[10px] bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded font-medium whitespace-nowrap">
+                                <span className="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md font-medium whitespace-nowrap shrink-0">
                                   {subItem.count}
                                 </span>
                               )}
                             </div>
                             {'desc' in subItem && (
-                              <p className="text-[11px] text-slate-500 mt-0.5">{subItem.desc}</p>
+                              <p className="text-[11px] text-slate-500 mt-0.5 leading-tight">{subItem.desc}</p>
                             )}
                           </Link>
                         ))}
