@@ -197,8 +197,8 @@ export default function HomePage() {
           <div className="absolute right-0 top-0 w-80 h-80 bg-red-600/10 rounded-full blur-3xl pointer-events-none" />
           
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10">
-            <div className="md:col-span-4 flex flex-col items-center text-center">
-              <div className="relative w-full max-w-[240px] sm:max-w-[260px] aspect-[4/3] rounded-2xl overflow-hidden border-4 border-red-500/40 shadow-2xl bg-slate-900 group ring-4 ring-white/10">
+            <div className="md:col-span-5 flex flex-col items-center text-center">
+              <div className="relative w-full max-w-sm aspect-[16/9] rounded-2xl overflow-hidden border-4 border-red-500/40 shadow-2xl bg-slate-900 group ring-4 ring-white/10">
                 <Image
                   src="/frontend/images/md-portrait.jpg"
                   alt="Managing Director - Jahid Office Equipment"
@@ -212,7 +212,7 @@ export default function HomePage() {
               <p className="text-[11px] text-slate-400 mt-1">Authorised Importer & Service Since 1990</p>
             </div>
 
-            <div className="md:col-span-8 space-y-4">
+            <div className="md:col-span-7 space-y-4">
               <span className="text-3xl text-red-500 font-serif">“</span>
               <p className="text-sm sm:text-base text-slate-200 italic leading-relaxed -mt-4">
                 Our relentless commitment since 1990 has been simple: provide Bangladesh's financial institutions, educational hubs, and enterprises with world-class Toshiba photocopying machines and guaranteed lifelong technical service. We value your business continuity above all else.
