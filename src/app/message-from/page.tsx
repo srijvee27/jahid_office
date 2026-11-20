@@ -112,19 +112,24 @@ export default function MessageFromMDPage() {
             </div>
 
             {/* Original Managing Director Photograph Banner */}
-            <div className="relative w-full h-64 sm:h-80 rounded-2xl overflow-hidden border border-slate-200 shadow-md">
+            <div className="relative w-full h-72 sm:h-96 rounded-2xl overflow-hidden border-2 border-slate-200 shadow-xl group">
               <Image
                 src="/frontend/images/managingdirector.jpg"
                 alt="Managing Director - Jahid Office Equipment"
                 fill
-                className="object-cover object-top"
+                className="object-cover object-[25%_center] group-hover:scale-[1.02] transition-transform duration-500"
                 priority
                 unoptimized
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent flex items-end p-4">
-                <span className="text-xs font-semibold text-white drop-shadow">
-                  Managing Director at Jahid Office Equipment Executive Office
-                </span>
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent flex items-end p-5 sm:p-6">
+                <div>
+                  <span className="text-xs font-bold uppercase tracking-wider text-red-400">
+                    Executive Desk · Jahid Office Equipment
+                  </span>
+                  <p className="text-base sm:text-lg font-bold text-white drop-shadow">
+                    Managing Director with Toshiba Office Solutions
+                  </p>
+                </div>
               </div>
             </div>
 

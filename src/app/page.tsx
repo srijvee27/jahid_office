@@ -189,16 +189,21 @@ export default function HomePage() {
       {/* 4. Managing Director Spotlight */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-8 sm:p-10 bg-gradient-to-r from-[#0b192c] via-[#162a45] to-[#0b192c] text-white rounded-3xl shadow-2xl relative overflow-hidden">
+          {/* Subtle Authentic Background Texture */}
+          <div 
+            className="absolute inset-0 opacity-15 bg-cover bg-[center_left] pointer-events-none mix-blend-luminosity" 
+            style={{ backgroundImage: "url('/frontend/images/managingdirector.jpg')" }}
+          />
           <div className="absolute right-0 top-0 w-80 h-80 bg-red-600/10 rounded-full blur-3xl pointer-events-none" />
           
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10">
             <div className="md:col-span-4 flex flex-col items-center text-center">
-              <div className="relative w-40 h-40 rounded-2xl overflow-hidden border-2 border-red-500/50 shadow-2xl bg-slate-900">
+              <div className="relative w-40 h-40 sm:w-48 sm:h-48 rounded-2xl overflow-hidden border-4 border-red-500/40 shadow-2xl bg-slate-900 group ring-4 ring-white/10">
                 <Image
                   src="/frontend/images/md-portrait.jpg"
                   alt="Managing Director - Jahid Office Equipment"
                   fill
-                  className="object-cover"
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
                   unoptimized
                 />
               </div>
